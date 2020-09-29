@@ -10,6 +10,7 @@ pipeline {
              stage('Test') {
             steps {
                 echo 'testing project'
+               input("do you want to continue")  
             }
              }
              stage('Deploy') {
